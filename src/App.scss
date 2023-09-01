@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Economica&family=Grape+Nuts&family=Roboto:wght@100;300;400;700;900&display=swap");
+
+$bg: rgb(16, 16, 16);
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+a,
+h2 {
+  color: white;
+  text-decoration: none;
+}
+
+.header {
+  height: 10vh;
+  background-color: $bg;
+  display: flex;
+  align-items: center;
+  padding: 2vh;
+  box-sizing: border-box;
+  justify-content: space-between;
+
+  > img {
+    height: 100%;
+    max-height: 8vh;
+  }
+  > div {
+    width: 100%;
+    margin-left: 4vw;
+    display: flex;
+    align-items: center;
+
+    > a {
+      margin: 2vw;
+      font-size: 3vw;
+      font-weight: 300;
+    }
+  }
+  > svg {
+    color: white;
+    font-size: 4vw;
+    cursor: pointer;
+
+    &:hover {
+      color: rgb(216, 216, 216);
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .header {
+    padding: 5vw;
+    > div {
+      margin-left: 8vw;
+      > a {
+        font-size: 5vw;
+      }
+    }
+    > svg {
+      font-size: 8vw;
+    }
+  }
+}
+
+@media (max-height: 844px) {
+  .header {
+    padding: 5vh;
+    > div {
+      margin-left: 8vh;
+      > a {
+        font-size: 5vh;
+      }
+    }
+    > svg {
+      font-size: 8vh;
+    }
+  }
+}
